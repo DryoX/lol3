@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
   let commander = new Discord.RichEmbed()
-  .setDescription("**All Commands That I Have | My Global Prefix Is V! **")
+  .setDescription("**All Commands That I Have | My Global Prefix Is cb! **")
   .setColor("#00ffe9")
   .addField("**Help Command**", ["`commands | see all my commands`", "`bug | Report bug if you've found one!`", "`about | Bot Owner,Ect`"])
   .addField("**Admin Commands**", ["`say (text)| let all player see that bot can speak!`", "`prefix | Usage: prefix (Your Prefix)`", "`tm | Usage: tm (name/id) (s/h/d)`", "`warn | Usage: warn (name/id) 3x warn = kicked`", "`wl | Usage: wl (name/id)`", "`kick | Usage: kick (name/id) (reason)`", "`ban | Usage: ban (name/id) (reason)`", "`clear | Usage: clear (1-100)`", "`addrole | Usage: addrole (name/id) (role)`", "`removerole | Usage: removerole (name/id) (role)`"])

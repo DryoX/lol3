@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   let bcInfo = args.join(" ");
   if(!bcInfo) return message.reply("Whats The Info?")
 
-   message.guild.channels.find(channel => channel.name === "broadcast", "broadcasts").message.channel.send(`@here there's something new`);
+  bot.channels.find('name', "broadcast").channel.send("@here we've a new broadcast");
   let bcEmbed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField("**Broadcast**", [`Broadcasted By: <@${message.author.id}>`, "**With This Info**", bcInfo]);

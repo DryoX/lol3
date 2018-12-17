@@ -6,11 +6,10 @@ module.exports.run = async (bot, message, args) => {
   if(!bcInfo) return message.reply("Whats The Info?")
   
   let bcEmbed = new Discord.RichEmbed()
-  message.channel.send("@here we've something new")
   .setColor("RANDOM")
   .addField("**Broadcast**", [`Broadcasted By: <@${message.author.id}>`, "**With This Info**", bcInfo]);
 
-  let bcChannel = message.guild.channels.find(channel => channel.name === "broadcast", "broadcasts");
+  let bcChannel = message.guild.channels.find(channel => channel.name === "broadcast", "broadcasts").send("@here we've something new");
   if(!bcChannel) return message.channel.send("Please Ask The Owner/Create A broadcast Channel!");
 
   message.delete().catch(O_o=>{});

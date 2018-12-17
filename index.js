@@ -8,7 +8,7 @@ const requid = [
   " - ",
   "cb!commands",
   "Created by Next",
-  "Version 1.0 BETA",
+  "Version 1.1 BETA",
   "Thanks for the invite!"
 ];
 let points = require("./points.json");

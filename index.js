@@ -9,7 +9,7 @@ const requid = [
   "cb!commands",
   "Created by Next",
   "Version 1.1 BETA",
-  "Merry Christmas 25/18!"
+  "Happy New Year 2018/2019"
 ];
 let points = require("./points.json");
 let xp = require("./xp.json");

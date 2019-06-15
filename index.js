@@ -7,9 +7,9 @@ bot.commands = new Discord.Collection();
 const requid = [
   " - ",
   "cb!commands",
-  "Created by Next",
+  "Created by /NvL/<",
   "Version 1.1 BETA",
-  "Happy New Year 2018/2019"
+  "Selamat Hari Raya Lebaran!"
 ];
 let points = require("./points.json");
 let xp = require("./xp.json");

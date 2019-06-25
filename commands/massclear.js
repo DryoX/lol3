@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-If(!message.member.guild.haspermision(`MANAGE_MESSAGE`) return message.channel.send("you're not allowed to use this command!");
+If(!message.member.haspermision(`MANAGE_MESSAGE`)) return message.channel.send("you're not allowed to use this command!");
 
 Return message.channel.send("Command Accepted").then(message.delete(5000));
 
